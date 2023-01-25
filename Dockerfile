@@ -3,9 +3,23 @@ FROM nvidia/cudagl:10.1-devel-ubuntu16.04
 # Setup basic packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
-    wget \
     git \
-    && apt-get clean && rm -rf /var/lib/apt/lists/*
+    curl \
+    vim \
+    ca-certificates \
+    libjpeg-dev \
+    libpng-dev \
+    libglfw3-dev \
+    libglm-dev \
+    libx11-dev \
+    libomp-dev \
+    libegl1-mesa-dev \
+    pkg-config \
+    wget \
+    zip \
+    net-tools \
+    unzip &&\
+    rm -rf /var/lib/apt/lists/*
 
 # Install miniconda
 ENV PATH="/root/miniconda3/bin:$PATH"
