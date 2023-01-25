@@ -1,0 +1,21 @@
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - aihabitat
+  - defaults
+dependencies:
+  - python=3.6
+  - cmake=3.14.0
+  - cudatoolkit=11.0
+  - pytorch=1.7.1
+  - torchvision
+  - habitat-sim=0.1.7
+  - withbullet
+  - headless
+  - x264==1!152.20180717
+  - ffmpeg=4.0.2
+  - quaternion
+  - ca-certificates
+  - openssl
+  - pip=21.3.1
